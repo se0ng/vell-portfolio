@@ -231,7 +231,7 @@ a:hover {
 .topic-list dt {
     clear: left;
     float: left;
-    width: 3rem;
+    width: 4rem;
     margin-right: 2rem;
 }
 
@@ -242,9 +242,8 @@ a:hover {
 .profile-title,
 .profile-name,
 .topic-list,
-.s-pr,
 .s-pr p {
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 @media (min-width:768px) {
