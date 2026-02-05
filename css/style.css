@@ -229,16 +229,12 @@ a:hover {
 
 .rne-img {
     width: 4rem;
-    height: 4rem;
-    border-radius: 1rem;
-
     display: flex;
     align-items: center;
 }
 
 .rne-img img {
-    width: 100%;
-    height: auto;
+    border-radius: .5rem;
 }
 
 .profile-name {
@@ -380,7 +376,7 @@ a:hover {
 }
 
 .open.categories .category-btn span {
-    transform: rotate(360deg *5);
+    transform: rotate(360*5deg);
     transition: transform .3s forwards;
 }
 
