@@ -280,7 +280,7 @@ a:hover {
     backdrop-filter: blur(8px) saturate(var(--saturation));
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
     box-shadow: var(--glass-effect);
-    border-radius: .8rem;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +296,7 @@ a:hover {
     font-family: "Figtree";
     font-size: 5vw;
     font-weight: 1000;
-    letter-spacing: .5rem;
+    letter-spacing: 1rem;
     color: var(--c-dark);
 }
 
