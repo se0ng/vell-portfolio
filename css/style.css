@@ -344,7 +344,7 @@ a:hover {
 
 .category-btn {
     width: 100%;
-    height: 10vh;
+    height: 4rem;
     background: var(--glass-bg);
     backdrop-filter: blur(8px) saturate(var(--saturation));
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
@@ -364,7 +364,7 @@ a:hover {
 
 .categories {
     width: 100%;
-    padding: 3rem;
+    padding: 2rem;
     height: auto;
     display: none;
 }
@@ -427,6 +427,14 @@ a:hover {
 }
 
 @media (min-width:768px) {
+
+    .works-item,
+    .more {
+        height: 80vh;
+    }
+}
+
+@media (min-height:375px) {
 
     .works-item,
     .more {
