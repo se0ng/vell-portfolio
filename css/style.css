@@ -204,7 +204,7 @@ a:hover {
     align-items: center;
     color: var(--c-dark);
     line-height: 1.6;
-    font-size: .75rem;
+    font-size: .8rem;
 }
 
 .profile-title {
@@ -304,7 +304,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: .5rem;
-    border-radius: .75rem;
+    border-radius: 1rem;
     z-index: 5;
 }
 
@@ -315,7 +315,7 @@ a:hover {
     backdrop-filter: blur(8px) saturate(var(--saturation));
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
     box-shadow: var(--glass-effect);
-    border-radius: .8rem;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,7 +349,7 @@ a:hover {
     backdrop-filter: blur(8px) saturate(var(--saturation));
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
     box-shadow: var(--glass-effect);
-    border-radius: .8rem;
+    border-radius: 1rem;
     font-size: 1rem;
     color: var(--c-dark);
     display: flex;
