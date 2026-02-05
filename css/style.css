@@ -331,7 +331,6 @@ a:hover {
     font-family: "Figtree";
     font-size: 5vw;
     font-weight: 1000;
-    letter-spacing: .5rem;
     color: var(--c-dark);
 }
 
@@ -434,11 +433,11 @@ a:hover {
     }
 }
 
-@media (min-height:375px) {
+@media (max-height:375px) {
 
     .works-item,
     .more {
-        height: 80vh;
+        height: 40rem;
     }
 }
 
