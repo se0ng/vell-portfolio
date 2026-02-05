@@ -48,18 +48,15 @@
     z-index: 15;
 }
 
-@media screen and (min-width:768px) {
-    .modal-container {
-        justify-content: flex-start;
-        align-items: center;
-    }
-}
-
 /* 表示状態 */
 .modal-container.show {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+
+.show .works {
+    overflow-y: hidden;
 }
 
 .modal-content a {
@@ -73,12 +70,12 @@
     backdrop-filter: blur(8px) saturate(var(--saturation));
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
     box-shadow: var(--glass-effect);
-    border: #222;
+    border: var(--c-dark);
     padding: 2rem;
-    border-radius: .75rem;
+    border-radius: 1rem;
     width: 100%;
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width: 80vw;
+    max-height: 80vh;
     overflow-y: scroll;
     overflow-x: hidden;
     display: flex;
@@ -108,10 +105,9 @@
     margin-top: 3rem;
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
     .modal-content {
-        left: .25rem;
-        max-width: 50vw;
+        max-width: 60vw;
     }
 
     .modal-img {
@@ -120,7 +116,7 @@
     }
 
     .modal-txt {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -139,7 +135,8 @@
     border: none;
     width: 2rem;
     height: 2rem;
-    font-size: 2rem;
+    padding: .5rem;
+    font-size: 1rem;
     border-radius: 1rem;
     line-height: 1.6;
     cursor: pointer;
