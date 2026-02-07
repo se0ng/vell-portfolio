@@ -297,7 +297,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: .5rem;
+    gap: 1rem;
     border-radius: 1rem;
     z-index: 5;
 }
@@ -405,7 +405,7 @@ a:hover {
 
     .works-list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
