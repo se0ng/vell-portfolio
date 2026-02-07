@@ -297,14 +297,14 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
     border-radius: 1rem;
     z-index: 5;
 }
 
 .box {
     width: 100%;
-    height: 60vh;
+    height: 60vw;
     background: var(--glass-bg);
     backdrop-filter: blur(8px) saturate(var(--saturation));
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
@@ -385,10 +385,14 @@ a:hover {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+    gap: .5rem;
 }
 
 @media (min-width:705px) {
+    .box {
+        height: 40vw;
+    }
+
     .title {
         font-size: 5vw;
     }
@@ -399,10 +403,6 @@ a:hover {
 }
 
 @media (min-width:768px) {
-    .box {
-        height: 80vh;
-    }
-
     .works-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -412,7 +412,7 @@ a:hover {
 .works-item,
 .more {
     width: 100%;
-    height: 50vh;
+    height: 24rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -425,14 +425,6 @@ a:hover {
     font-family: "Figtree";
     cursor: pointer;
     transition: background-color .3s ease;
-}
-
-@media (min-width:705px) {
-
-    .works-item,
-    .more {
-        height: 24rem;
-    }
 }
 
 @media (min-width:1024px) {
@@ -492,19 +484,13 @@ a:hover {
     font-size: 1rem;
 }
 
-.tags {
-    display: flex;
-    flex-direction: row;
+.tags,
+.used-apps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     font-size: .8rem;
     gap: .1rem;
     margin-bottom: .1rem;
-}
-
-.used-apps {
-    display: flex;
-    flex-direction: column;
-    font-size: .8rem;
-    gap: .1rem;
 }
 
 .more {
