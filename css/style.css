@@ -197,7 +197,7 @@ a:hover {
 }
 
 .profile-inner {
-    width: 16rem;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,7 +208,7 @@ a:hover {
 }
 
 .profile-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 300;
 }
 
@@ -276,15 +276,15 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-@media (min-width:768px) {
-    .profile-inner {
-        width: 32rem;
-        font-size: .8rem;
-    }
-
+@media (min-width:705px) {
     .profile {
         flex-direction: row;
-        gap: 4rem;
+    }
+}
+
+@media (min-width:768px) {
+    .profile-inner {
+        width: 60%;
     }
 }
 
