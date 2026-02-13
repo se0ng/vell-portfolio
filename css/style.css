@@ -61,7 +61,7 @@ body {
 }
 
 body {
-    font-family: "Figtree";
+    font-family: var(--f-f);
     /* font-optical-sizing: auto; */
     font-weight: 700;
     font-style: normal;
@@ -174,7 +174,7 @@ a:hover {
     gap: 4rem;
 }
 
-.pr-aria {
+.pr-area {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -184,7 +184,8 @@ a:hover {
 }
 
 .profile-inner {
-    width: 80%;
+    width: calc(100% - 40px);
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,7 +202,6 @@ a:hover {
 
 .profile {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -225,8 +225,9 @@ a:hover {
 }
 
 .profile-name {
-    font-size: .8rem;
+    font-size: 14px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -238,12 +239,13 @@ a:hover {
 
 .topic-list {
     text-align: center;
+    font-size: 14px;
 }
 
 .topic-list dt {
     clear: left;
     float: left;
-    width: 4rem;
+    width: 6rem;
     margin-right: 2rem;
 }
 
@@ -263,22 +265,9 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-@media (min-width:425px) {
-    .profile-name {
-        font-size: 1rem;
-    }
-}
-
-
-@media (min-width:705px) {
-    .profile {
-        flex-direction: row;
-    }
-}
-
-@media (min-width:768px) {
+@media (max-height:600px) {
     .profile-inner {
-        width: 60%;
+        max-width: 80%;
     }
 }
 
@@ -304,7 +293,7 @@ a:hover {
 
 .box {
     width: 100%;
-    height: 60vw;
+    height: 40vw;
     background: var(--glass-bg);
     backdrop-filter: blur(8px) saturate(var(--saturation));
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
@@ -388,11 +377,7 @@ a:hover {
     gap: .5rem;
 }
 
-@media (min-width:705px) {
-    .box {
-        height: 40vw;
-    }
-
+@media (min-width:700px) {
     .title {
         font-size: 5vw;
     }
