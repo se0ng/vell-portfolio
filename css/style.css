@@ -197,7 +197,7 @@ a:hover {
 
 .profile-title {
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: normal;
 }
 
 .profile {
@@ -407,7 +407,6 @@ a:hover {
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
     box-shadow: var(--glass-effect);
     border-radius: 1rem;
-    font-family: "Figtree";
     cursor: pointer;
     transition: background-color .3s ease;
 }
@@ -541,7 +540,7 @@ a:hover {
 
 .footer-txt {
     text-align: center;
-    font-size: .8rem;
+    font-size: 14px;
     margin-bottom: 1rem;
 }
 
