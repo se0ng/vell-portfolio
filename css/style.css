@@ -63,7 +63,7 @@ body {
 body {
     font-family: var(--f-f);
     /* font-optical-sizing: auto; */
-    font-weight: 700;
+    font-weight: bold;
     font-style: normal;
 
     background: var(--c-light);
@@ -184,8 +184,8 @@ a:hover {
 }
 
 .profile-inner {
-    width: calc(100% - 40px);
-    max-width: 60%;
+    width: calc(100% - 20px);
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,7 +197,7 @@ a:hover {
 
 .profile-title {
     font-size: 1.6rem;
-    font-weight: normal;
+    font-weight: 300;
 }
 
 .profile {
@@ -263,12 +263,6 @@ a:hover {
 .profile-name,
 .s-pr {
     margin-bottom: 1rem;
-}
-
-@media (max-height:600px) {
-    .profile-inner {
-        max-width: 80%;
-    }
 }
 
 /* MAIN - WORKS */
@@ -407,6 +401,7 @@ a:hover {
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
     box-shadow: var(--glass-effect);
     border-radius: 1rem;
+    font-family: "Figtree";
     cursor: pointer;
     transition: background-color .3s ease;
 }
@@ -541,6 +536,7 @@ a:hover {
 .footer-txt {
     text-align: center;
     font-size: 14px;
+    font-weight: normal;
     margin-bottom: 1rem;
 }
 
