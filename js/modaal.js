@@ -16,23 +16,11 @@ document.querySelectorAll('.works-item').forEach(card => {
 });
 
 // close
-document.querySelectorAll('.modal-container').forEach(bg => {
-    bg.addEventListener('click', e => {
-        if (e.target === bg) {
-            bg.classList.remove('show');
-            html.style.overflow = '';
-            body.style.overflow = '';
-        }
-    });
-});
-
-document.querySelectorAll('.modal-content').forEach(bg => {
-    bg.addEventListener('click', e => {
-        if (e.target === bg) {
-            bg.classList.remove('show');
-            html.style.overflow = '';
-            body.style.overflow = '';
-        }
+document.querySelectorAll('.modal-container').forEach(container => {
+    container.addEventListener('click', () => {
+        container.classList.remove('show');
+        html.style.overflow = '';
+        body.style.overflow = '';
     });
 });
 
