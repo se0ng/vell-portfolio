@@ -454,6 +454,11 @@ a:hover {
     padding: 1rem;
 }
 
+.works-img img {
+    max-width: 160px;
+    max-height: 160px;
+}
+
 .works-item-txt {
     font-size: 1rem;
     opacity: .5;
