@@ -26,6 +26,16 @@ document.querySelectorAll('.modal-container').forEach(bg => {
     });
 });
 
+document.querySelectorAll('.modal-content').forEach(bg => {
+    bg.addEventListener('click', e => {
+        if (e.target === bg) {
+            bg.classList.remove('show');
+            html.style.overflow = '';
+            body.style.overflow = '';
+        }
+    });
+});
+
 // key Esc
 window.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
