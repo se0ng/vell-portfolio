@@ -1,17 +1,28 @@
+const html = document.documentElement;
+const body = document.body;
+
 // open
 document.querySelectorAll('.works-item').forEach(card => {
     card.addEventListener('click', () => {
-        const modal = document.getElementById(card.dataset.modal);
-        modal.classList.add('show');
-        document.body.classList.add('modal-bg');
+        const modalId = card.dataset.modal;
+        const modal = document.getElementById(modalId);
+
+        if (modal) {
+            modal.classList.add('show');
+            html.style.overflow = 'hidden';
+            body.style.overflow = 'hidden';
+        }
     });
 });
 
 // close
 document.querySelectorAll('.modal-container').forEach(bg => {
-    bg.addEventListener('click', () => {
-        bg.classList.remove('show');
-        document.body.classList.remove('modal-bg');
+    bg.addEventListener('click', e => {
+        if (e.target === bg) {
+            bg.classList.remove('show');
+            html.style.overflow = '';
+            body.style.overflow = '';
+        }
     });
 });
 
