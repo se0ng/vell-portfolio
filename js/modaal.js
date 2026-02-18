@@ -8,18 +8,9 @@ document.querySelectorAll('.works-item').forEach(card => {
 });
 
 // close
-document.querySelectorAll('.close').forEach(btn => {
-    btn.addEventListener('click', () => {
-        btn.closest('.modal-container').classList.remove('show');
+document.querySelectorAll('.modal-container').forEach(bg => {
+    bg.addEventListener('click', () => {
+        bg.classList.remove('show');
         document.body.classList.remove('modal-bg');
-    });
-});
-
-// fade
-$(document).ready(function () {
-    $('.works-item').modaal({
-        type: 'inline',
-        overlay_opacity: .7,
-        animation: 'fade'
     });
 });
