@@ -35,14 +35,9 @@
     touch-action: none;
 }
 
-.modal-bg {
-    overflow: hidden;
-}
-
 /* MODAL CONTENT */
 .modal-content {
     position: relative;
-    overflow-x: hidden;
     overflow-y: auto;
     touch-action: auto;
 
