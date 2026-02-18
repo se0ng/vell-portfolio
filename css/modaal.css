@@ -27,8 +27,8 @@
 
 /* MODAL */
 .modal {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .modal-container {
@@ -83,6 +83,7 @@
     max-width: 800px;
     max-height: 100%;
 
+    overflow-x: hidden;
     overflow-y: scroll;
 
     display: flex;
