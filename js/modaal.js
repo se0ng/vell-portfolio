@@ -1,15 +1,25 @@
-// modal open
+// open
 document.querySelectorAll('.works-item').forEach(card => {
     card.addEventListener('click', () => {
-        const modalId = card.dataset.modal; // data-modal属性を取得
-        const modal = document.getElementById(modalId);
-        modal.classList.add('show'); // 直接 modal-container に show を付与
+        const modal = document.getElementById(card.dataset.modal);
+        modal.classList.add('show');
+        document.body.classList.add('modal-bg');
     });
 });
 
-// modal close
+// close
 document.querySelectorAll('.close').forEach(btn => {
     btn.addEventListener('click', () => {
         btn.closest('.modal-container').classList.remove('show');
+        document.body.classList.remove('modal-bg');
+    });
+});
+
+// fade
+$(document).ready(function () {
+    $('.works-item').modaal({
+        type: 'inline',
+        overlay_opacity: .7,
+        animation: 'fade'
     });
 });
