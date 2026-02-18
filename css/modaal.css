@@ -64,10 +64,9 @@
 }
 
 .modal-img {
-    width: calc(100% - 20px);
+    width: 100%;
     max-width: 320px;
-    height: calc(100% - 20px);
-    max-height: 320px;
+    height: 100%;
 }
 
 .modal-txt {
