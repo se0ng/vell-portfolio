@@ -14,3 +14,14 @@ document.querySelectorAll('.modal-container').forEach(bg => {
         document.body.classList.remove('modal-bg');
     });
 });
+
+// key Esc
+window.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        const activeModal = document.querySelector('.modal-container.show');
+        if (activeModal) {
+            activeModal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    }
+});
