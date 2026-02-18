@@ -441,7 +441,7 @@ a:hover {
 }
 
 .works-img {
-    width: calc(100% - 20px);
+    width: 100%;
     max-width: 200px;
     height: 200px;
 
@@ -455,7 +455,6 @@ a:hover {
 }
 
 .works-img img {
-    max-width: 160px;
     max-height: 160px;
 }
 
