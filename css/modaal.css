@@ -12,8 +12,8 @@
     overflow: hidden;
 
     background: var(--glass-bg);
-    backdrop-filter: blur(16px) saturate(var(--saturation));
-    -webkit-backdrop-filter: blur(16px) saturate(var(--saturation));
+    backdrop-filter: blur(20px) saturate(var(--saturation));
+    -webkit-backdrop-filter: blur(20px) saturate(var(--saturation));
     box-shadow: var(--glass-effect);
 
     display: flex;
@@ -67,7 +67,9 @@
     width: 100%;
     max-width: 320px;
     height: 100%;
+    max-height: 320px;
     object-fit: contain;
+    margin: 10px;
 }
 
 .modal-txt {
@@ -77,6 +79,12 @@
     letter-spacing: 2px;
     color: var(--c-dark);
     text-align: center;
+
+    margin-top: 40px;
+}
+
+.modal-txt:first-of-type {
+    margin-top: 0;
 }
 
 .modal .link {
@@ -85,10 +93,6 @@
     text-transform: uppercase;
     text-decoration: underline;
 
-    margin-top: 2rem;
-}
-
-.modal-txt:nth-child(n+1) {
     margin-top: 40px;
 }
 
