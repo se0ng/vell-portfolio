@@ -127,23 +127,17 @@ a:hover {
     font-size: 1rem;
     font-weight: bold;
     gap: 4vw;
-    padding: .5rem 1rem;
+    padding: 8px 1rem;
 
     margin-top: 1rem;
-    border-radius: .5rem;
+    border-radius: 8px;
     position: fixed;
     z-index: 10;
-    opacity: .8;
 
     background: var(--glass-bg);
     backdrop-filter: blur(8px) saturate(var(--saturation));
     -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
     box-shadow: var(--glass-effect);
-}
-
-.nav:hover {
-    opacity: 1;
-    transition: opacity .5s;
 }
 
 .menu {
@@ -156,16 +150,12 @@ a:hover {
 
     .nav,
     .menu {
-        gap: 1.6rem;
+        gap: 20px;
     }
 }
 
 .menu a {
     color: var(--c-dark);
-}
-
-.menu a:hover {
-    opacity: .8;
 }
 
 .inner {
@@ -184,7 +174,7 @@ a:hover {
 }
 
 .profile-title {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: normal;
     text-align: center;
 }
@@ -550,7 +540,7 @@ a:hover {
 
 .footer-txt {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     margin-bottom: 1rem;
 }
