@@ -161,7 +161,7 @@ a:hover {
 .inner {
     display: grid;
     place-items: center;
-    padding: 20px;
+    padding: 20px 0;
     gap: 4rem;
 }
 
@@ -235,7 +235,7 @@ a:hover {
 }
 
 .s-pr {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     max-width: 600px;
 
     display: flex;
@@ -263,7 +263,7 @@ a:hover {
 
 /* MAIN - WORKS */
 .works {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     max-width: 960px;
 
     display: grid;
@@ -510,7 +510,7 @@ a:hover {
     grid-template-columns: 1fr;
     align-items: center;
     text-align: center;
-    gap: 1.5rem 3rem;
+    gap: 20px 40px;
 
     color: var(--c-dark);
     font-size: 1rem;
